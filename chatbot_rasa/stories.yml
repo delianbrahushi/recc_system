@@ -1,0 +1,74 @@
+version: "3.1"
+
+stories:
+
+- story: student_visa_renewal_inquiry
+  steps:
+  - intent: inquire_renew_student_visa
+  - action: utter_ask_documents
+  - action: action_api_info
+  - intent: visa_thd_web
+  - action: utter_provide_thd_visa_web
+
+
+- story: travel_and_health_inquiry
+  steps:
+  - intent: inquire_travel_restrictions
+  - action: utter_check_updates
+  - intent: inquire_health_insurance_requirements
+  - action: utter_health_insurance_requirements_info
+
+
+- story: language_assistance_dialog
+  steps:
+
+    - intent: inquire_language_assistance
+    - action: utter_inquire_language_assistance
+
+    - intent: apply_language_programs
+    - action: utter_apply_language_programs
+
+    - intent: specific_program_interest
+    - action: utter_specific_program_interest
+
+
+- story: events_information
+  steps:
+    - intent: inquire_upcoming_events
+    - action: utter_inquire_upcoming_events
+    - action: action_api_info_2
+    - intent: inquire_event_details
+    - action: utter_inquire_event_details
+    - action: action_api_info_2
+    - intent: inquire_event_registration
+    - action: utter_event_registration_info
+
+- story: events_information_recursion
+  steps:
+    - intent: inquire_upcoming_events
+    - action: utter_inquire_upcoming_events
+    - action: action_api_info_2
+    - intent: inquire_upcoming_events
+    - action: utter_inquire_upcoming_events
+    - action: action_api_info_2
+    - intent: inquire_event_details
+    - action: utter_inquire_event_details
+    - action: action_api_info_2
+    - intent: inquire_event_registration
+    - action: utter_event_registration_info
+
+
+- story: lang_cultural_network
+  steps:
+    - intent: inquire_language_intercultural_networking
+    - action: utter_lang_cultural_network
+    - intent: inquire_next_event_details
+    - action: utter_next_event_details
+    - intent: inquire_storytelling_additional_info
+    - action: utter_storytelling_additional_info
+    - intent: storytelling_application
+    - action: utter_storytelling_application
+
+
+
+
