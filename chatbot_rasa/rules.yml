@@ -1,0 +1,19 @@
+version: "3.1"
+
+rules:
+
+- rule: Greet
+  conversation_start: True
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule : Goodbye greet
+  steps:
+  - intent: goodbye_greet
+  - action: utter_goodbye
+
+- rule : Gratitude
+  steps:
+  - intent: express_gratitude
+  - action: utter_youre_welcome

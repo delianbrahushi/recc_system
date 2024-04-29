@@ -1,0 +1,140 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: inquire_renew_student_visa
+  examples: |
+    - Hi, I need guidance on renewing my student visa.
+    - Can you help me with renewing my student visa?
+
+- intent: express_gratitude
+  examples: |
+    - Thanks
+    - Thank you
+    - Appreciate it
+    - Thanks a lot! I appreciate the guidance.
+    - Thank you for the information. It's really helpful.
+    - I'm grateful for your assistance. Thanks!
+    - Thanks a bunch! This clears things up.
+    - Appreciate your help. Thank you!
+
+- intent: inquire_travel_restrictions
+  examples: |
+    - Quick question - any updates on travel restrictions?
+    - Can you provide information on current travel restrictions?
+
+- intent: inquire_health_insurance_requirements
+  examples: |
+    - What about health insurance requirements for international students?
+    - Can you guide me on health insurance requirements for international students?
+
+- intent: visa_thd_web
+  examples: |
+    - I have a question about the THD website for visa information
+    - Can you provide details about the THD website and visas?
+    - How can I find visa information on the THD website?
+    - Tell me more about THD website and visas
+
+- intent: goodbye_greet
+  examples: |
+      - Goodbye
+      - Farewell
+      - See you later
+      - Until next time
+      - Have a great day
+      - Take care
+      - Goodbye for now
+      - It was nice talking to you
+      - Bye bye
+      - Adieu
+      - So long
+      - Catch you later
+      - Wishing you a wonderful day ahead
+      - Until we meet again
+
+- intent: inquire_language_assistance
+  examples: |
+      - Can you provide information about language assistance programs ?
+      - Can you tell me about language assistance options?
+      - What language assistance programs are available for international students?
+      - I'm curious about language assistance programs. Can you help?
+      - language programs
+
+- intent: apply_language_programs
+  examples: |
+      - How do I apply for language assistance programs?
+      - What's the application process for language programs?
+     
+
+- intent: specific_program_interest
+  examples: |
+      - Can you provide details about the language exchange program?
+      - Tell me more about the available resources for language development.
+      - I want information about language programs.
+
+
+- intent: inquire_upcoming_events
+  examples: |
+    - What are the upcoming events on campus?
+    - Can you tell me about upcoming events for international students?
+    - Any cool events happening soon?
+
+- intent: inquire_event_details
+  examples: |
+    - Give me details about the upcoming event.
+    - Can you provide more information about the event?
+    - Tell me about the event happening soon.
+
+- intent: inquire_event_registration
+  examples: |
+    - Is there a registration process for the event?
+    - Do I need to register for the upcoming event?
+    - How can I sign up for the event?
+    - Is there any registration fee for the event?
+    - Tell me about event registration.
+
+- intent: inquire_language_intercultural_networking
+  examples: |
+    - Are there any language exchange programs?
+    - Are there any language exchange programs for international students at THD?
+    - I'm eager to connect with other students and learn about different cultures.
+    - Are there any intercultural activities on campus?
+    - I'm interested in connecting with other students and exploring different cultures.
+
+- intent: inquire_next_event_details
+  examples: |
+    - Anything else I should know about the next Storytelling Café?
+    - Tell me more details about the upcoming Storytelling Café.
+    - Can you provide information about the next event?
+
+- intent: inquire_storytelling_additional_info
+  examples: |
+    - Anything else I should know about the Storytelling Café?
+    - What else is there to know about the Storytelling Café?
+    - Any additional information about the Storytelling Café?
+    - Tell me more about the Storytelling Café.
+    - Additional details about the Storytelling Café.
+    - More information on the Storytelling Café.
+    - Any other tips for the Storytelling Café?
+
+- intent: storytelling_application
+  examples: |
+    - How can I apply for the Storytelling Café?
+    - Is there an application process for the Storytelling Café?
+    - What do I need to do to participate in the Storytelling Café?
+

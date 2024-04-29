@@ -1,0 +1,97 @@
+version: "3.1"
+
+intents:
+  - greet
+  - express_gratitude
+  - inquire_renew_student_visa
+  - inquire_travel_restrictions
+  - inquire_health_insurance_requirements
+  - visa_thd_web
+  - goodbye_greet
+  - inquire_language_assistance
+  - apply_language_programs
+  - specific_program_interest
+  - inquire_upcoming_events
+  - inquire_event_details
+  - inquire_event_registration
+  - inquire_language_intercultural_networking
+  - inquire_next_event_details
+  - inquire_storytelling_additional_info
+  - storytelling_application
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I assist you today?"
+
+  utter_ask_documents:
+    - text: "Start early and gather the following documents for your student visa renewal:"
+    - text: "Make sure you have the following documents ready for your student visa renewal:"
+
+  utter_provide_thd_visa_web:
+    - text: "For comprehensive information about visas and related matters, please visit the official THD website at the following link: (https://www.th-deg.de/en/study-with-us/practical-information#visa)."
+
+
+  utter_youre_welcome:
+    - text: "You're welcome! If you have more questions, feel free to ask."
+
+  utter_check_updates:
+    - text: "Check your government and destination's official websites for real-time updates."
+
+  utter_health_insurance_requirements_info:
+    - text: "Ensure your health insurance meets university and immigration standards. Find details on the university's student services or immigration portal. (https://www.th-deg.de/en/study-with-us/practical-information#insurance)"
+
+  utter_goodbye:
+    - text: "Goodbye! If you need further assistance, don't hesitate to ask. Take care!"
+
+  utter_inquire_language_assistance:
+    - text: "We offer a variety of language assistance programs tailored for international students. This includes tutoring services, language exchange programs, and additional resources to enhance your language skills."
+    - text: "We provide language assistance programs for international students. This includes tutoring, language exchange, and additional resources to support your language development."
+
+  utter_apply_language_programs:
+    - text: "Applying is easy! Visit the university's language assistance portal to find details about each program and the respective application processes. Is there a specific program you're interested in?"
+    - text: "The application process is straightforward. Head to the language assistance portal for program details and application steps. Anything specific you're looking to apply for?"
+
+  utter_specific_program_interest:
+    - text: "Sure! For specific program details, such as the language exchange program, you can explore the information available on the language assistance portal. (https://www.th-deg.de/en/study-with-us/prep-courses#lets-get-started)"
+    - text: "Certainly! If you're interested in specific programs like the language exchange program, the language assistance portal has detailed information. (https://www.th-deg.de/en/study-with-us/prep-courses#lets-get-started)"
+
+  utter_inquire_upcoming_events:
+    - text: "There's an upcoming event on campus."
+
+  utter_inquire_event_details:
+    - text: "Sure! I can provide more information about the upcoming event. Give me a moment."
+
+
+  utter_event_registration_info:
+    - text: "No, there is no registration required for this event. It's free to enter! Feel free to join and enjoy the event."
+    - text: "You don't need to register for this event; it's open to everyone. Come and enjoy the experience!"
+    - text: "No registration is necessary. The event is free, and you're welcome to attend without signing up."
+
+  utter_lang_cultural_network:
+    - text: "Absolutely, one fantastic opportunity is the Storytelling Café. It's a monthly event where international students share personal experiences, customs, and traditions, fostering a rich intercultural exchange."
+    - text: "Absolutely, you might want to consider attending the Storytelling Café. It's a monthly event held in the Cultural Exchange Hall where international students share personal experiences, customs, and traditions."
+    - text: "Absolutely, you might be interested in the Storytelling Café. It's a monthly event in the Cultural Exchange Hall where participants share stories from their cultures, providing a natural platform for language and cultural exchange."
+    - text: "Absolutely, one fantastic opportunity is the Storytelling Café. It's an engaging event where language exchange naturally happens during discussions about personal experiences and traditions."
+
+  utter_next_event_details:
+    - text: "The next Storytelling Café is scheduled for next Friday at 7:00 PM in the Cultural Exchange Hall. It's an open event, so no formal registration is required. Feel free to join for a delightful evening of cultural exchange!"
+    - text: "Join us for the next Storytelling Café next Friday at 7:00 PM in the Cultural Exchange Hall. It's an open event, providing a relaxed space for language exchange. No formal registration needed; just show up and enjoy the diverse stories!"
+
+  utter_storytelling_additional_info:
+    - text: "The atmosphere is friendly and relaxed. It's an excellent opportunity not only for language exchange but also for cultural enrichment. Bring a story to share or just come to listen and practice your language skills."
+    - text: "Feel free to bring a story to share or simply come to listen and practice your language skills in a relaxed setting. The atmosphere is friendly, and it's a great opportunity for cultural enrichment."
+
+  utter_storytelling_application:
+    - text: "There's no formal application process for the Storytelling Café. It's an open event, and you can join by simply showing up at the Cultural Exchange Hall during the scheduled time. Feel free to participate and enjoy the cultural exchange!"
+    - text: "No application is needed for the Storytelling Café. It's an open and inclusive event. You can join by showing up at the Cultural Exchange Hall during the scheduled time. Bring a story to share or just come to listen and practice your language skills!"
+
+
+
+
+actions:
+  - action_api_info
+  - action_api_info_2
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
