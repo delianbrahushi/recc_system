@@ -5,7 +5,7 @@ THD International Chatbot
 ## Project description
 
 The Chatbot for THD International Website is designed to enhance the user experience for international students at THD by providing a conversational interface to access information about upcoming events, language exchange programs, intercultural activities on campus and visa/immigration guidance.
-The Chatbot has the same structure and way of conversing as showed on [[Dialog Flow](https://mygit.th-deg.de/db27960/speech-assistant-system/-/wikis/4.1-Dialogs-Flow)] 
+The Chatbot has the same structure and way of conversing as showed on [[Dialog Flow](https://github.com/delianbrahushi/recc_system/wiki)] 
 
 ## Prerequisites
 
